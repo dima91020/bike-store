@@ -4,7 +4,7 @@
   height: 100vh;
   background-color: #c2c2c2;
   font-weight: 600;
-  color: #1d1d1d;
+  color: $main-text-color-menu;
   text-transform: uppercase;
 
   &__top {
@@ -32,7 +32,7 @@
     display: block;
     width: fit-content;
     padding-bottom: 7px;
-    border-bottom: 1px solid #1d1d1d;
+    border-bottom: 1px solid $main-text-color-menu;
   
     font-size: 12px;
     line-height: 16px;
