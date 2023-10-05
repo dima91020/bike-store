@@ -1,17 +1,18 @@
 .compare-bikes {
   &__products {
-    display: grid;
+    @include pageGrid;
     row-gap: 48px;
+  }
+
+  &__product {
+    grid-column: 1 / -1;
 
     @include onTablet {
-      justify-items: center;
-      row-gap: 48px;
+      grid-column: 2 / -2;
     }
 
     @include onDesktop {
-      grid-template-columns: repeat(3, 1fr);
-      justify-items: stretch;
-      column-gap: 24px;
+      grid-column: span 4;
     }
   }
 }
