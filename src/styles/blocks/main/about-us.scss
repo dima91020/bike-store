@@ -2,23 +2,24 @@
   @include pageGrid;
 
   margin: 0;
-  font-size: 23px;
-  font-weight: 500;
-  line-height: 140%; /* 32.2px */
 
   &__title {
     grid-column: 1 / -1;
 
     @include onTablet {
-      grid-column: 1 / 4;
+      grid-column: span 3;
     }
 
     @include onDesktop {
-      grid-column: span 5;
+      grid-column: span 4;
     }
   }
 
   &__description {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 140%; /* 32.2px */
     grid-column: 1 / -1;
 
     @include onTablet {
