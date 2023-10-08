@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
     <link rel="stylesheet" href="styles/style.scss">
     <script src="scripts/main.js" defer></script>
   </head>
@@ -219,13 +220,83 @@
 
           <section class="contacts" id="contacts">
             <h2 class="section-title">Contact us</h2>
+
+            <div class="contacts-wrapper">
+              <form
+                action="URL"
+                method="get"
+                class="contacts-form"
+              >
+                <input
+                  type="text"
+                  class="contacts-form__input input"
+                  placeholder="Name"
+                  required
+                >
+                <input
+                  type="email"
+                  class="contacts-form__input input"
+                  placeholder="Email"
+                  required
+                >
+                <textarea
+                  class="contacts-form__textarea textarea"
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+
+                <button class="contacts-form__button button">
+                  Send
+                </button>
+              </form>
+
+              <div class="contacts-content">
+                <ul class="contacts-content__list">
+                  <li class="contacts-content__item">
+                    Phone
+                    <a
+                      class="contacts-content__link"
+                      href="tel:+1 234 5555-55-55"
+                    >
+                      +1 234 5555-55-55
+                    </a>
+                  </li>
+
+                  <li class="contacts-content__item">
+                    Email
+                    <a
+                      class="contacts-content__link"
+                      href="mailto:hello@miami.com"
+                    >
+                      hello@miami.com
+                    </a>
+                  </li>
+
+                  <li class="contacts-content__item">
+                    Address
+                    <a
+                      class="contacts-content__link"
+                      href="https://www.google.com.ua/maps/place/400+N+1st+Ave+STE+700,+Minneapolis,+MN+55401,+%D0%A1%D0%A8%D0%90/@44.9772656,-93.4091942,11z/data=!4m6!3m5!1s0x52b3328fdf233887:0x3348e5113ed2472d!8m2!3d44.9813258!4d-93.2731311!16s%2Fg%2F11nyn_tfyt?hl=ru&entry=ttu"
+                      target="_blank"
+                    >
+                      400 first ave. suite 700 Minneapolis, MN 55401
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </section>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-
+      <img
+        src="images/footer_photo.png"
+        class="footer__image"
+        alt="footer image"
+      >
     </footer>
   </body>
 </html>
